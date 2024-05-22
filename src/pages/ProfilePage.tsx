@@ -1,9 +1,11 @@
-import React from 'react'
+import Menu from "../components/Menu";
 
 const ProfilePage = () => {
   return (
-    <div>ProfilePage</div>
-  )
-}
+    <div>
+      <Menu />
+    </div>
+  );
+};
 
-export default ProfilePage
+export default ProfilePage;

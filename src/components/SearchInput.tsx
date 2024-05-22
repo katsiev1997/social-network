@@ -8,7 +8,7 @@ const SearchInput = () => {
         className="w-full bg-gray-200 text-gray-700 py-2 px-4 rounded focus:outline-none focus:bg-white focus:border focus:border-blue-400"
       />
       <img
-        src="/search-alt-1-svgrepo-com.svg"
+        src="/search.svg"
         className="absolute w-6 top-2 right-7 flex items-center text-gray-500"
       ></img>
     </div>

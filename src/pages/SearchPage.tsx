@@ -1,8 +1,10 @@
-import React from 'react'
+import Menu from '../components/Menu'
 
 const SearchPage = () => {
   return (
-    <div>SearchPage</div>
+    <div>
+      <Menu />
+    </div>
   )
 }
 

@@ -1,9 +1,11 @@
-import React from 'react'
+import Menu from "../components/Menu";
 
 const SettingsPage = () => {
   return (
-    <div>SettingsPage</div>
-  )
-}
+    <div>
+      <Menu />
+    </div>
+  );
+};
 
-export default SettingsPage
+export default SettingsPage;
