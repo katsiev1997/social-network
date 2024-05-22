@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import SearchInput from "../components/SearchInput";
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
-  )
-}
+    <div>
+      <SearchInput />
+    </div>
+  );
+};
 
-export default HomePage
+export default HomePage;
