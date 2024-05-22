@@ -1,11 +1,29 @@
-import Menu from '../components/Menu'
+import Contact from "../components/Contact";
+import Menu from "../components/Menu";
+import SearchInput from "../components/SearchInput";
 
 const SearchPage = () => {
   return (
-    <div>
+    <div className="mt-10 gap-4 flex flex-col justify-center items-center">
+      <h1 className="font-bold text-3xl">Friends</h1>
+      <SearchInput />
+      <div className="w-3/4">
+      <Contact />
+      <Contact />
+      <Contact />
+      <Contact />
+      <Contact />
+      <Contact />
+      <Contact />
+      <Contact />
+      <Contact />
+      <Contact />
+      <Contact />
+      <Contact />
+      </div>
       <Menu />
     </div>
-  )
-}
+  );
+};
 
-export default SearchPage
+export default SearchPage;

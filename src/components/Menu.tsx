@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 const Menu = () => {
   return (
     <>
-      <div className="fixed w-screen bottom-10 flex justify-center z-40">
+      <div className="fixed mx-auto bottom-10 flex justify-center z-40">
         <Link to="/">
           <img className="w-12 " src="/plus.svg" alt="plus" />
         </Link>
       </div>
-      <div className="flex px-10 bottom-0 left-0 justify-between fixed w-full items-center h-24 bg-white z-10">
+      <div className="flex px-10 bottom-0 left-0 justify-around fixed w-full items-center h-24 bg-white z-10">
         <Link to="/search">
           <img className="w-8" src="/search.svg" alt="search" />
         </Link>
