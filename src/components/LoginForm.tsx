@@ -1,10 +1,11 @@
 import { Link, useNavigate } from "react-router-dom";
 
 const LoginForm = () => {
-    const navigate = useNavigate()
-    const onSubmit = () => {
-        navigate('/')
-    }
+  const navigate = useNavigate();
+  const onSubmit = () => {
+    sessionStorage.setItem("login", "true");
+    navigate("/");
+  };
   return (
     <form onSubmit={onSubmit} className="max-w-sm mx-auto mt-8">
       <div className="mb-4">
