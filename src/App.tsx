@@ -1,23 +1,23 @@
-import { Route, Routes, useNavigate } from "react-router-dom";
-import LoginPage from "./pages/LoginPage";
-import SignupPage from "./pages/SignupPage";
-import SettingsPage from "./pages/SettingsPage";
-import HomePage from "./pages/HomePage";
-import SearchPage from "./pages/SearchPage";
-import ProfilePage from "./pages/ProfilePage";
-import MessengerPage from "./pages/MessengerPage";
 import { useEffect } from "react";
+import { Route, Routes, useNavigate } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import LoginPage from "./pages/LoginPage";
+import MessengerPage from "./pages/MessengerPage";
+import ProfilePage from "./pages/ProfilePage";
+import SearchPage from "./pages/SearchPage";
+import SettingsPage from "./pages/SettingsPage";
+import SignupPage from "./pages/SignupPage";
 
 function App() {
   const navigate = useNavigate();
+  const login = sessionStorage.getItem("login");
   useEffect(() => {
-    const login = sessionStorage.getItem("login");
     if (!login) {
       navigate("/login");
     } else {
       navigate("/");
     }
-  });
+  },[login, navigate]);
   return (
     <>
       <Routes>
